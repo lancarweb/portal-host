@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock title %} - Faba</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p><a href="{{url_for('main.index')}}">Back to Portal Apps</a></p>
+    <ul>
+        <li><a href="{{url_for('faba.index')}}">Home</a></li>
+        <li><a href="{{url_for('faba.transporter')}}">Transporter</a></li>
+    </ul>
+    <div style="background-color: aqua;">
+    {% block content %}
+    {% endblock content %}
+    </div>
+    <h1>Footer</h1>
+</body>
+</html>
